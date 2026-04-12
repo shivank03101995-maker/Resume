@@ -1,0 +1,113 @@
+{
+  "hero": {
+    "brand": "Your Portfolio",
+    "eyebrow": "Blockchain Developer",
+    "name": "Shivank Singh",
+    "title": "Building clean digital products with frontend polish and backend structure",
+    "summary": "This portfolio is set up so you can easily update your intro, projects, experience, and contact details from one place. It uses a React frontend and a Node/Express backend so you have a strong base for future development.",
+    "primaryCtaLabel": "View Projects",
+    "primaryCtaLink": "#projects",
+    "secondaryCtaLabel": "Contact Me",
+    "secondaryCtaLink": "#contact",
+    "focusTitle": "Open for better Colloboration on BlockChain",
+    "focusSummary": "Use this area to describe what you are currently learning, building, or looking for in your next role.",
+    "focusAreas": [
+      "Responsive frontend development",
+      "API integration and backend workflows",
+      "Scalable project structure"
+    ]
+  },
+  "about": {
+    "heading": "Designed to stay editable as your work evolves",
+    "description": "Instead of hardcoding everything into many components, this project keeps your portfolio content in a single JSON file served by the backend. That means you can quickly update text, add projects, change links, and expand sections without rewriting the whole UI."
+  },
+  "stats": [
+    {
+      "value": "01",
+      "label": "Editable data source"
+    },
+    {
+      "value": "02",
+      "label": "Full-stack structure"
+    },
+    {
+      "value": "03",
+      "label": "Responsive layouts"
+    },
+    {
+      "value": "04",
+      "label": "Future-ready sections"
+    }
+  ],
+  "skills": [
+    "React",
+    "JavaScript",
+    "Go",
+    "Solidity",
+    "Hyperledger Fabric Network",
+    "HTML5",
+    "Web3",
+    "Postgres Database",
+    "Git"
+  ],
+  "experience": [
+    {
+      "role": "Frontend Developer",
+      "company": "Your Company Name",
+      "period": "2024 - Present",
+      "description": "Replace this with your real experience. You can describe what you built, how you collaborated, and the impact you created.",
+      "highlights": [
+        "React UI",
+        "Reusable components",
+        "Performance improvements"
+      ]
+    },
+    {
+      "role": "Backend / Full-Stack Contributor",
+      "company": "Your Team or Freelance Work",
+      "period": "2023 - 2024",
+      "description": "Use this second entry for internships, freelance work, student projects, or personal product development.",
+      "highlights": [
+        "Express APIs",
+        "Project architecture",
+        "Feature delivery"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "type": "Featured Project",
+      "title": "Portfolio Website",
+      "description": "A responsive portfolio system with React on the frontend and an Express backend serving editable content.",
+      "stack": [
+        "React",
+        "Express",
+        "CSS",
+        "REST API"
+      ],
+      "liveLink": "#",
+      "repoLink": "#"
+    },
+    {
+      "type": "Web Application",
+      "title": "Project Two",
+      "description": "Replace this card with one of your real projects. Add more project objects in the JSON file whenever you want to expand the portfolio.",
+      "stack": [
+        "JavaScript",
+        "Node.js",
+        "MongoDB",
+        "API Design"
+      ],
+      "liveLink": "#",
+      "repoLink": "#"
+    }
+  ],
+  "contact": {
+    "heading": "Let’s build something useful",
+    "description": "Update these links with your own email, LinkedIn, GitHub, and resume link.",
+    "email": "you@example.com",
+    "linkedin": "https://www.linkedin.com/",
+    "github": "https://github.com/",
+    "resumeLink": "#"
+  }
+}
