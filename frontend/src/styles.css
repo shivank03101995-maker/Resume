@@ -291,6 +291,31 @@ h3 {
   padding: 26px;
 }
 
+.accordion-item {
+  overflow: hidden;
+}
+
+.accordion-trigger {
+  width: 100%;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.accordion-trigger:hover .accordion-icon,
+.accordion-trigger:focus-visible .accordion-icon {
+  transform: scale(1.08);
+}
+
+.accordion-trigger:focus-visible {
+  outline: 2px solid rgba(191, 90, 54, 0.35);
+  outline-offset: 8px;
+  border-radius: 18px;
+}
+
 .timeline-head {
   display: flex;
   justify-content: space-between;
@@ -299,8 +324,77 @@ h3 {
   margin-bottom: 1rem;
 }
 
+.accordion-kicker {
+  margin: 0 0 0.35rem;
+  color: var(--accent-deep);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.accordion-meta,
+.accordion-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.accordion-title-row {
+  width: 100%;
+}
+
+.accordion-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-deep);
+  font-size: 1.3rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  transition: transform 180ms ease, background-color 180ms ease;
+}
+
+.accordion-summary {
+  margin: 0;
+}
+
+.multiline-text {
+  white-space: pre-line;
+}
+
+.accordion-panel {
+  margin-top: 1.4rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line);
+}
+
+.detail-list {
+  margin: 0 0 1.25rem;
+  padding-left: 1.1rem;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.detail-list li + li {
+  margin-top: 0.45rem;
+}
+
+.is-open .accordion-icon {
+  background: rgba(191, 90, 54, 0.18);
+}
+
 .project-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-accordion {
+  grid-template-columns: 1fr;
 }
 
 .project-card {

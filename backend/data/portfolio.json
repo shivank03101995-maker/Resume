@@ -52,21 +52,40 @@
   ],
   "experience": [
     {
-      "role": "Frontend Developer",
-      "company": "Your Company Name",
-      "period": "2024 - Present",
-      "description": "Replace this with your real experience. You can describe what you built, how you collaborated, and the impact you created.",
+      "role": "Blockchain Developer",
+      "company": "Expedien eSolutions",
+      "period": "2025 - Present",
+      "description": "I am currently working as a Blockchain Developer, specializing in building enterprise-grade solutions using Hyperledger Fabric. My role focuses on designing secure, scalable, and permissioned blockchain networks for real-world business applications.",
+      "descriptions":[
+        "🔗 Blockchain Architecture Design robust and scalable network architectures tailored to enterprise needs",
+
+        "📜 Smart Contracts Develop chaincode using Go/Node.js to automate and secure business logic",
+
+        "🔐 Identity & Security Implement secure identity management with Fabric CA and access control policies",
+
+        "🌐 DApp Development Build decentralized applications for seamless interaction with blockchain systems",
+
+        "🔌 System Integration Connect blockchain networks with backend systems using APIs and SDKs",
+
+        "⚙️ Network Optimization Monitor, troubleshoot, and enhance performance for production-grade systems"
+      ],
       "highlights": [
-        "React UI",
-        "Reusable components",
-        "Performance improvements"
+        "Hyperledger Fabric",
+        "Go / Node.js",
+        "Docker (for network deployment)",
+        "Git & CI/CD pipelines"
       ]
     },
     {
-      "role": "Backend / Full-Stack Contributor",
-      "company": "Your Team or Freelance Work",
-      "period": "2023 - 2024",
+      "role": "Blockchain Developer",
+      "company": "Beehive Systems Private Limited",
+      "period": "2024 - 2025",
       "description": "Use this second entry for internships, freelance work, student projects, or personal product development.",
+      "descriptions": [
+        "Built backend APIs and connected them with frontend interfaces for smoother product workflows",
+        "Planned project structure so features stayed modular and easier to maintain over time",
+        "Handled bug fixes, feature delivery, and iteration based on changing project needs"
+      ],
       "highlights": [
         "Express APIs",
         "Project architecture",
@@ -76,27 +95,43 @@
   ],
   "projects": [
     {
-      "type": "Featured Project",
-      "title": "Portfolio Website",
-      "description": "A responsive portfolio system with React on the frontend and an Express backend serving editable content.",
+      "type": "Blockchain Web Application",
+      "title": "Land Record Management System",
+      "description": "Land Record Management System is based on private blockchain Hyperledger Fabric Network. It is designed to provide a secure and transaparent platform for managing land records, ensuring data integrity and accessibiltiy to satkeholders. All land transactions and ownershinp details are stored on blockchain, provinding immutable and tamper proof ledger.",
       "stack": [
         "React",
-        "Express",
-        "CSS",
-        "REST API"
+        "Hperledger Fabric",
+        "GO",
+        "MongoDB",
+        "PostgreSql"
+      ],
+      "details": [
+        "Created a React frontend that renders content dynamically from the backend portfolio JSON",
+        "Built an Express API layer so profile content can be updated from one editable source",
+        "Designed the UI to stay responsive across desktop and mobile layouts"
       ],
       "liveLink": "#",
       "repoLink": "#"
     },
     {
       "type": "Web Application",
-      "title": "Project Two",
-      "description": "Replace this card with one of your real projects. Add more project objects in the JSON file whenever you want to expand the portfolio.",
+      "title": "Decentralised Exchange",
+      "description": "Created a decentralized exchange (DEX) using React for frontend and Solidity for smart contract development on polygon testnet. For backend I have used Node.js to handle request bind with price feed and user authentications",
       "stack": [
-        "JavaScript",
+        "Solidity",
         "Node.js",
         "MongoDB",
-        "API Design"
+        "API Design",
+        "Web3 Integration"
+      ],
+      "details": [
+        " 🌐 Developed a full-stack Decentralized Exchange (DEX) using React for a responsive and interactive frontend interface",
+        " ⛓️ Designed and deployed smart contracts using Solidity on the Polygon Testnet for secure and efficient token swaps",
+        " 🖥️ Built backend services using Node.js to handle API requests, user authentication, and blockchain interaction",
+        " 📊 Integrated real-time price feeds to enable accurate token valuation during trading operations",
+         "🔗 Connected frontend with smart contracts using Web3 libraries for seamless wallet interaction and transaction execution ",
+         "🔐 Structured the project with modular architecture to ensure scalability and maintainability Implemented secure authentication and request handling to enhance user trust and system reliability",
+         "⚡ Continuously improved the platform by fixing bugs, optimizing performance, and iterating on features based on testing and feedback"
       ],
       "liveLink": "#",
       "repoLink": "#"
@@ -106,8 +141,8 @@
     "heading": "Let’s build something useful",
     "description": "Update these links with your own email, LinkedIn, GitHub, and resume link.",
     "email": "you@example.com",
-    "linkedin": "https://www.linkedin.com/",
-    "github": "https://github.com/",
+    "linkedin": "https://www.linkedin.com",
+    "github": "https://github.com/shivank03101995-maker",
     "resumeLink": "#"
   }
 }

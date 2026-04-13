@@ -10,9 +10,26 @@ const emptyPortfolio = {
   contact: {}
 };
 
+function normalizeDetailLines(content) {
+  if (Array.isArray(content)) {
+    return content.filter(Boolean);
+  }
+
+  if (typeof content === "string") {
+    return content
+      .split("\n")
+      .map((line) => line.trim())
+      .filter(Boolean);
+  }
+
+  return [];
+}
+
 function App() {
   const [portfolio, setPortfolio] = useState(emptyPortfolio);
   const [status, setStatus] = useState("loading");
+  const [openExperience, setOpenExperience] = useState(0);
+  const [openProject, setOpenProject] = useState(0);
 
   useEffect(() => {
     async function loadPortfolio() {
@@ -130,25 +147,58 @@ function App() {
           </div>
 
           <div className="timeline">
-            {experience.map((item) => (
-              <article className="timeline-item card" key={`${item.company}-${item.role}`}>
-                <div className="timeline-head">
-                  <div>
-                    <h3>{item.role}</h3>
-                    <p className="muted">{item.company}</p>
-                  </div>
-                  <span className="timeline-period">{item.period}</span>
-                </div>
-                <p>{item.description}</p>
-                <div className="tag-row">
-                  {item.highlights.map((highlight) => (
-                    <span className="tag" key={highlight}>
-                      {highlight}
-                    </span>
-                  ))}
-                </div>
-              </article>
-            ))}
+            {experience.map((item, index) => {
+              const isOpen = openExperience === index;
+              const details = normalizeDetailLines(item.descriptions ?? item.details);
+
+              return (
+                <article
+                  className={`timeline-item card accordion-item ${isOpen ? "is-open" : ""}`}
+                  key={`${item.company}-${item.role}`}
+                >
+                  <button
+                    className="accordion-trigger"
+                    type="button"
+                    onClick={() => setOpenExperience(isOpen ? -1 : index)}
+                    aria-expanded={isOpen}
+                  >
+                    <div className="timeline-head">
+                      <div>
+                        <p className="accordion-kicker">{item.company}</p>
+                        <h3>{item.role}</h3>
+                      </div>
+                      <div className="accordion-meta">
+                        <span className="timeline-period">{item.period}</span>
+                        <span className="accordion-icon" aria-hidden="true">
+                          {isOpen ? "−" : "+"}
+                        </span>
+                      </div>
+                    </div>
+                    <p className="accordion-summary multiline-text">{item.description}</p>
+                  </button>
+
+                  {isOpen ? (
+                    <div className="accordion-panel">
+                      {details.length ? (
+                        <ul className="detail-list">
+                          {details.map((detail) => (
+                            <li key={detail}>{detail}</li>
+                          ))}
+                        </ul>
+                      ) : null}
+
+                      <div className="tag-row">
+                        {item.highlights.map((highlight) => (
+                          <span className="tag" key={highlight}>
+                            {highlight}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  ) : null}
+                </article>
+              );
+            })}
           </div>
         </section>
 
@@ -160,29 +210,61 @@ function App() {
             </div>
           </div>
 
-          <div className="project-grid">
-            {projects.map((project) => (
-              <article className="project-card" key={project.title}>
-                <div className="project-top">
-                  <span className="project-type">{project.type}</span>
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
-                </div>
+          <div className="project-grid project-accordion">
+            {projects.map((project, index) => {
+              const isOpen = openProject === index;
+              const details = normalizeDetailLines(project.details);
 
-                <div className="tag-row">
-                  {project.stack.map((item) => (
-                    <span className="tag" key={item}>
-                      {item}
-                    </span>
-                  ))}
-                </div>
+              return (
+                <article
+                  className={`project-card accordion-item ${isOpen ? "is-open" : ""}`}
+                  key={project.title}
+                >
+                  <button
+                    className="accordion-trigger"
+                    type="button"
+                    onClick={() => setOpenProject(isOpen ? -1 : index)}
+                    aria-expanded={isOpen}
+                  >
+                    <div className="project-top">
+                      <span className="project-type">{project.type}</span>
+                      <div className="accordion-title-row">
+                        <h3>{project.title}</h3>
+                        <span className="accordion-icon" aria-hidden="true">
+                          {isOpen ? "−" : "+"}
+                        </span>
+                      </div>
+                      <p className="accordion-summary multiline-text">{project.description}</p>
+                    </div>
+                  </button>
 
-                <div className="project-links">
-                  <a href={project.liveLink}>Live Demo</a>
-                  <a href={project.repoLink}>Repository</a>
-                </div>
-              </article>
-            ))}
+                  {isOpen ? (
+                    <div className="accordion-panel">
+                      {details.length ? (
+                        <ul className="detail-list">
+                          {details.map((detail) => (
+                            <li key={detail}>{detail}</li>
+                          ))}
+                        </ul>
+                      ) : null}
+
+                      <div className="tag-row">
+                        {project.stack.map((item) => (
+                          <span className="tag" key={item}>
+                            {item}
+                          </span>
+                        ))}
+                      </div>
+
+                      <div className="project-links">
+                        <a href={project.liveLink}>Live Demo</a>
+                        <a href={project.repoLink}>Repository</a>
+                      </div>
+                    </div>
+                  ) : null}
+                </article>
+              );
+            })}
           </div>
         </section>
 
