@@ -57,19 +57,26 @@ Do not open `dist/index.html` directly in the browser for this project, because 
 ## Main files to edit
 
 - `backend/data/portfolio.json`
-- `src/App.jsx`
-- `src/styles.css`
+- `frontend/src/App.jsx`
+- `frontend/src/styles.css`
 
 ## How to customize quickly
 
 Edit `backend/data/portfolio.json` to change:
 
-- Hero section
-- About text
-- Skills
-- Experience
-- Projects
-- Contact links
+- `navigation` for top nav links
+- `hero.actions` for hero buttons
+- `skillsSection.items` for skills
+- `experienceSection.items` for work history
+- `projectsSection.items` for projects
+- `contact.links` for contact actions
+
+To add a new job or project, append another object inside:
+
+- `experienceSection.items`
+- `projectsSection.items`
+
+The frontend now renders those arrays automatically, so you do not need to touch the React component for normal content updates.
 
 Edit `src/styles.css` to change:
 

@@ -245,6 +245,16 @@ h3 {
   margin-bottom: 1.5rem;
 }
 
+.section-title {
+  margin-bottom: 0.75rem;
+}
+
+.section-intro {
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
 .card {
   padding: 26px;
 }
@@ -303,6 +313,8 @@ h3 {
   color: inherit;
   text-align: left;
   cursor: pointer;
+  display: grid;
+  gap: 1rem;
 }
 
 .accordion-trigger:hover .accordion-icon,
@@ -336,9 +348,13 @@ h3 {
 .accordion-meta,
 .accordion-title-row {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
+}
+
+.accordion-meta {
+  width: 100%;
 }
 
 .accordion-title-row {
@@ -362,6 +378,7 @@ h3 {
 
 .accordion-summary {
   margin: 0;
+  flex: 1;
 }
 
 .multiline-text {

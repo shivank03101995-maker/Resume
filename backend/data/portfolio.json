@@ -1,148 +1,242 @@
 {
+  "navigation": [
+    { "label": "About", "href": "#about" },
+    { "label": "Skills", "href": "#skills" },
+    { "label": "Experience", "href": "#experience" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Contact", "href": "#contact" }
+  ],
   "hero": {
-    "brand": "Your Portfolio",
+    "brand": "Shivank Singh",
     "eyebrow": "Blockchain Developer",
     "name": "Shivank Singh",
-    "title": "Building clean digital products with frontend polish and backend structure",
-    "summary": "This portfolio is set up so you can easily update your intro, projects, experience, and contact details from one place. It uses a React frontend and a Node/Express backend so you have a strong base for future development.",
-    "primaryCtaLabel": "View Projects",
-    "primaryCtaLink": "#projects",
-    "secondaryCtaLabel": "Contact Me",
-    "secondaryCtaLink": "#contact",
-    "focusTitle": "Open for better Colloboration on BlockChain",
-    "focusSummary": "Use this area to describe what you are currently learning, building, or looking for in your next role.",
+    "title": "Building secure blockchain products with frontend polish and backend structure",
+    "summary": "This portfolio now runs from structured content sections, so you can add future work experience, projects, and links by appending data objects instead of editing React components.",
+    "actions": [
+      {
+        "label": "View Projects",
+        "href": "#projects",
+        "variant": "primary"
+      },
+      {
+        "label": "Contact Me",
+        "href": "#contact",
+        "variant": "secondary"
+      }
+    ],
+    "focusTitle": "Open to building stronger blockchain systems",
+    "focusSummary": "Use this area to describe what you are actively building, learning, or targeting in your next role.",
     "focusAreas": [
-      "Responsive frontend development",
-      "API integration and backend workflows",
-      "Scalable project structure"
+      "Hyperledger Fabric network design",
+      "Backend integrations for decentralized systems",
+      "Responsive product interfaces"
     ]
   },
   "about": {
+    "id": "about",
+    "label": "About",
     "heading": "Designed to stay editable as your work evolves",
-    "description": "Instead of hardcoding everything into many components, this project keeps your portfolio content in a single JSON file served by the backend. That means you can quickly update text, add projects, change links, and expand sections without rewriting the whole UI."
+    "description":[ "I am a blockchain developer focused on building secure, scalable, and real-world applications using Hyperledger Fabric and modern web technologies.",
+               " My work spans decentralized identity, land registry systems, and smart contract development. I continuously refine my projects by improving performance, adding new features, and adapting to real-world use cases."
+              ] 
+    },
+  "statsSection": {
+    "id": "stats",
+    "label": "Highlights",
+    "items": [
+      {
+        "value": "Real-World Use Cases",
+        "label": "Focused on solving real-world problems like land ownership tracking and secure transactions."
+      },
+      {
+        "value": "Scalable Architecture",
+        "label": "Designs systems that scale from prototypes to production environments."
+      },
+      {
+        "value": "Continuous Learning",
+        "label": "Constantly improving skills in blockchain, backend systems, and distributed architectures."
+      },
+      {
+        "value": "Modern Tech Stack",
+        "label": "Experienced with Hyperledger Fabric, Node.js, React, MongoDB, and REST APIs."
+      }
+    ]
   },
-  "stats": [
-    {
-      "value": "01",
-      "label": "Editable data source"
-    },
-    {
-      "value": "02",
-      "label": "Full-stack structure"
-    },
-    {
-      "value": "03",
-      "label": "Responsive layouts"
-    },
-    {
-      "value": "04",
-      "label": "Future-ready sections"
-    }
-  ],
-  "skills": [
-    "React",
-    "JavaScript",
-    "Go",
-    "Solidity",
-    "Hyperledger Fabric Network",
-    "HTML5",
-    "Web3",
-    "Postgres Database",
-    "Git"
-  ],
-  "experience": [
-    {
-      "role": "Blockchain Developer",
-      "company": "Expedien eSolutions",
-      "period": "2025 - Present",
-      "description": "I am currently working as a Blockchain Developer, specializing in building enterprise-grade solutions using Hyperledger Fabric. My role focuses on designing secure, scalable, and permissioned blockchain networks for real-world business applications.",
-      "descriptions":[
-        "🔗 Blockchain Architecture Design robust and scalable network architectures tailored to enterprise needs",
+  "skillsSection": {
+    "id": "skills",
+    "label": "Skills",
+    "heading": "Core technologies and tools",
+    "description": "Road to build Skills.",
+    "items": [
+      "React",
+      "JavaScript",
+      "Go",
+      "Solidity",
+      "Hyperledger Fabric",
+      "HTML5",
+      "Web3",
+      "PostgreSQL",
+      "Git"
+    ]
+  },
+  "experienceSection": {
+    "id": "experience",
+    "label": "Experience",
+    "heading": "Work that shaped my Professional Career.",
+    "description": "Professional working experience.",
+    "items": [
+      {
+        "role": "Blockchain Developer",
+        "company": "Expedien eSolutions",
+        "period": "2025 - Present",
+        "description":
+         [ "Currently working as a Blockchain Developer, focusing on building and enhancing private permissioned blockchain networks using Hyperledger Fabric ",
+            "focusing on R&D, implementing real-world projects, and ensuring scalability, availability, and performance while delivering enterprise-grade blockchain solutions."
+         ],
+         "descriptions": [
+           "🔗 Blockchain Architecture",
+              "Designing and deploying scalable and secure network architectures using Hyperledger Fabric, including peers, channels, and ordering services tailored to enterprise requirements.\n",
 
-        "📜 Smart Contracts Develop chaincode using Go/Node.js to automate and secure business logic",
+           "📜 Smart Contracts (Chaincode Development)",
+              "Developing and maintaining chaincode using Go/Node.js to automate business logic, ensuring data integrity, transparency, and trust across the network.\n",
 
-        "🔐 Identity & Security Implement secure identity management with Fabric CA and access control policies",
+           "🔐 Identity & Security",
+              "Implementing robust identity management using Fabric CA with role-based access control to ensure only authorized participants can access and modify data.\n",
 
-        "🌐 DApp Development Build decentralized applications for seamless interaction with blockchain systems",
+           "🌐 DApp Development",
+              "Building user-friendly decentralized applications (DApps) that allow users to interact with the blockchain for record verification, transaction tracking, and secure data access.\n",
 
-        "🔌 System Integration Connect blockchain networks with backend systems using APIs and SDKs",
+           "🔌 System Integration",
+             "Integrating blockchain networks with backend systems and external services using REST APIs and Fabric SDKs for seamless enterprise adoption.\n",
 
-        "⚙️ Network Optimization Monitor, troubleshoot, and enhance performance for production-grade systems"
-      ],
-      "highlights": [
-        "Hyperledger Fabric",
-        "Go / Node.js",
-        "Docker (for network deployment)",
-        "Git & CI/CD pipelines"
-      ]
-    },
-    {
-      "role": "Blockchain Developer",
-      "company": "Beehive Systems Private Limited",
-      "period": "2024 - 2025",
-      "description": "Use this second entry for internships, freelance work, student projects, or personal product development.",
-      "descriptions": [
-        "Built backend APIs and connected them with frontend interfaces for smoother product workflows",
-        "Planned project structure so features stayed modular and easier to maintain over time",
-        "Handled bug fixes, feature delivery, and iteration based on changing project needs"
-      ],
-      "highlights": [
-        "Express APIs",
-        "Project architecture",
-        "Feature delivery"
-      ]
-    }
-  ],
-  "projects": [
-    {
-      "type": "Blockchain Web Application",
-      "title": "Land Record Management System",
-      "description": "Land Record Management System is based on private blockchain Hyperledger Fabric Network. It is designed to provide a secure and transaparent platform for managing land records, ensuring data integrity and accessibiltiy to satkeholders. All land transactions and ownershinp details are stored on blockchain, provinding immutable and tamper proof ledger.",
-      "stack": [
-        "React",
-        "Hperledger Fabric",
-        "GO",
-        "MongoDB",
-        "PostgreSql"
-      ],
-      "details": [
-        "Created a React frontend that renders content dynamically from the backend portfolio JSON",
-        "Built an Express API layer so profile content can be updated from one editable source",
-        "Designed the UI to stay responsive across desktop and mobile layouts"
-      ],
-      "liveLink": "#",
-      "repoLink": "#"
-    },
-    {
-      "type": "Web Application",
-      "title": "Decentralised Exchange",
-      "description": "Created a decentralized exchange (DEX) using React for frontend and Solidity for smart contract development on polygon testnet. For backend I have used Node.js to handle request bind with price feed and user authentications",
-      "stack": [
-        "Solidity",
-        "Node.js",
-        "MongoDB",
-        "API Design",
-        "Web3 Integration"
-      ],
-      "details": [
-        " 🌐 Developed a full-stack Decentralized Exchange (DEX) using React for a responsive and interactive frontend interface",
-        " ⛓️ Designed and deployed smart contracts using Solidity on the Polygon Testnet for secure and efficient token swaps",
-        " 🖥️ Built backend services using Node.js to handle API requests, user authentication, and blockchain interaction",
-        " 📊 Integrated real-time price feeds to enable accurate token valuation during trading operations",
-         "🔗 Connected frontend with smart contracts using Web3 libraries for seamless wallet interaction and transaction execution ",
-         "🔐 Structured the project with modular architecture to ensure scalability and maintainability Implemented secure authentication and request handling to enhance user trust and system reliability",
-         "⚡ Continuously improved the platform by fixing bugs, optimizing performance, and iterating on features based on testing and feedback"
-      ],
-      "liveLink": "#",
-      "repoLink": "#"
-    }
-  ],
+           "⚙️ Network Optimization",
+              "Monitoring, troubleshooting, and optimizing blockchain network performance to ensure high availability, scalability, and efficiency in production environments."
+        ],
+        "highlights": [
+          "Hyperledger Fabric",
+          "Go / Node.js",
+          "Docker",
+          "Git & CI/CD"
+        ]
+      },
+      {
+        "role": "Blockchain Developer",
+        "company": "Beehive Systems Private Limited",
+        "period": "2024 - 2025",
+        "description": "Delivered blockchain-focused features across backend services and connected interfaces.",
+        "descriptions": [
+          "Built backend APIs and connected them to frontend interfaces for smoother product workflows.",
+          "Planned modular project structure so features stayed easier to maintain over time.",
+          "Handled bug fixes, feature delivery, and iterations based on evolving requirements."
+        ],
+        "highlights": [
+          "Express APIs",
+          "Project architecture",
+          "Feature delivery"
+        ]
+      }
+    ]
+  },
+  "projectsSection": {
+    "id": "projects",
+    "label": "Projects",
+    "heading": "Selected builds with room to grow",
+    "description": "Each project object becomes a new card automatically.",
+    "items": [
+      {
+        "type": "Blockchain Web Application",
+        "title": "Land Record Management System",
+        "description": "Land Record Managemnet System is based on privta blockchain Hyprrledger Fabric Network. It is design to push data on blockchain so data is immutable and tamperproof and all the records must be tracable on blockchain.",
+        "stack": [
+          "React",
+          "Hyperledger Fabric",
+          "Go",
+          "MongoDB",
+          "PostgreSQL",
+          "Blockchain Explorer"
+        ],
+        "details": [
+           "Designed and developed a decentralized land record system using Hyperledger Fabric to ensure data immutability and transparency.",
+            "Built a private permissioned blockchain network, allowing only authorized stakeholders (e.g., government officials, land inspectors) to access and update records securely.",
+            "Implemented smart contracts (chaincode) to automate land transactions, ownership transfers, and validation processes—reducing manual errors and fraud.",
+            "Enabled tamper-proof storage of land records where once data is written, it cannot be altered, ensuring long-term reliability and trust.",
+            "Developed traceability features allowing users to track the complete history of land ownership and transactions on the blockchain.",
+            "Integrated role-based access control, ensuring different user roles (admin, registrar, citizen) interact with the system securely and efficiently.",
+            "Designed an interactive user interface/dashboard where users can: ",
+            "🔍 Search and verify land ownership records",
+            "📜 View transaction history in a transparent manner",
+            "🧾 Request ownership transfer digitally",
+            "✅ Validate authenticity of land documents  ",
+            "Leveraged peer nodes and ordering service in Hyperledger Fabric to maintain consensus and ensure reliable transaction processing.",
+            "Improved data security and auditability compared to traditional centralized systems by eliminating single points of failure.",
+            "Demonstrated how blockchain can reduce corruption, fraud, and disputes in land management systems."
+        ],
+        "links": [
+          {
+            "label": "Live Demo",
+            "href": "#"
+          },
+          {
+            "label": "Repository",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "type": "Web Application",
+        "title": "Decentralized Exchange",
+        "description": "A DEX built with React, Solidity, and Node.js for smart contract-based trading, wallet interaction, and backend-driven price services.",
+        "stack": [
+          "React",
+          "Solidity",
+          "Node.js",
+          "MongoDB",
+          "Web3 Integration"
+        ],
+        "details": [
+          " 🌐 Developed a full-stack Decentralized Exchange (DEX) using React for a responsive and interactive frontend interface",
+          " ⛓️ Designed and deployed smart contracts using Solidity on the Polygon Testnet for secure and efficient token swaps",
+          " 🖥️ Built backend services using Node.js to handle API requests, user authentication, and blockchain interaction",
+          " 📊 Integrated real-time price feeds to enable accurate token valuation during trading operations",
+          "🔗 Connected frontend with smart contracts using Web3 libraries for seamless wallet interaction and transaction execution ",
+          "🔐 Structured the project with modular architecture to ensure scalability and maintainability Implemented secure authentication and request handling to enhance user trust and system reliability",
+          "⚡ Continuously improved the platform by fixing bugs, optimizing performance, and iterating on features based on testing and feedback"
+        ],
+        "links": [
+          {
+            "label": "Live Demo",
+            "href": "#"
+          },
+          {
+            "label": "Repository",
+            "href": "#"
+          }
+        ]
+      }
+    ]
+  },
   "contact": {
+    "id": "contact",
+    "label": "Contact",
     "heading": "Let’s build something useful",
-    "description": "Update these links with your own email, LinkedIn, GitHub, and resume link.",
-    "email": "you@example.com",
-    "linkedin": "https://www.linkedin.com",
-    "github": "https://github.com/shivank03101995-maker",
-    "resumeLink": "#"
+    "description": "Add, remove, or rename contact links from this array.",
+    "links": [
+      {
+        "name":"gmail","label": "gmail",
+        "href": "shivank0311@gmail.com"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/shivank03101995-maker"
+      },
+      {
+        "label": "Resume",
+        "href": "#"
+      }
+    ]
   }
 }
